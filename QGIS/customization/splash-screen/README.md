@@ -1,7 +1,9 @@
 # 🖼️ Custom QGIS Splash Screen
 
-This guide explains how to **enable QGIS interface customization** and modify the splash screen by editing `QGISCUSTOMIZATION3.ini`.  
-Ce guide explique comment **activer l'interface de Customisation QGIS** et modifier l'écran de démarrage en éditant `QGISCUSTOMIZATION3.ini`.  
+*This guide explains how to **enable QGIS interface customization** and modify the splash screen by editing `QGISCUSTOMIZATION3.ini`.*
+
+*Ce guide explique comment **activer l'interface de Customisation QGIS** et modifier l'écran de démarrage en éditant `QGISCUSTOMIZATION3.ini`.*
+
 ---
 
 ## 🌍 English
