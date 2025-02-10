@@ -1,7 +1,7 @@
 # 🖼️ Custom QGIS Splash Screen
 
 This guide explains how to **enable QGIS interface customization** and modify the splash screen by editing `QGISCUSTOMIZATION3.ini`.  
-
+Ce guide explique comment **activer l'interface de Customisation QGIS** et modifier l'écran de démarrage en éditant `QGISCUSTOMIZATION3.ini`.  
 ---
 
 ## 🌍 English
@@ -25,11 +25,13 @@ This guide explains how to **enable QGIS interface customization** and modify th
 
 #### 🐧 Linux Syntax:
 *(For an image located in the `default` profile folder)*
+
 ```splashpath=home/asus/qgis/qgis3/profiles/default/```
 
 #### 🖥️ Windows Syntax:
 
 *(For an image located in the `default` profile folder)*
+
 ```splashpath=C:\\Users\\ASUS\\AppData\\Roaming\\QGIS\\QGIS3\\profiles\\default\\```
 
 ---
@@ -54,9 +56,11 @@ This guide explains how to **enable QGIS interface customization** and modify th
 - **Exemples de chemins:**
 
 #### 🐧 Syntaxe Linux :
-(Pour une image située dans le dossier `default`)
+*(Pour une image située dans le dossier `default`)*
+
 ```splashpath=home/asus/qgis/qgis3/profiles/default/```
 
 #### 🖥️ Syntaxe Windows :
-(Pour une image située dans le dossier `default`)
+*(Pour une image située dans le dossier `default`)*
+
 ```splashpath=C:\\Users\\ASUS\\AppData\\Roaming\\QGIS\\QGIS3\\profiles\\default\\```
