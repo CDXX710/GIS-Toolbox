@@ -44,7 +44,7 @@
 1. Ouvrir **QGIS**.
 2. Aller dans Préférences → Interface....
 3. Cocher la case **Activer la personnalisation**.
-         *⚠️ Sans cette étape, le fichier `QGISCUSTOMIZATION3.ini` n'existera pas !*
+   *⚠️ Sans cette étape, le fichier `QGISCUSTOMIZATION3.ini` n'existera pas !*
 
 ### 📂 Accéder à `QGISCUSTOMIZATION3.ini`
 1. Aller dans **Préférences → Profils → Ouvrir le répertoire du profil actif**.
