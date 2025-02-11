@@ -1,4 +1,4 @@
-# 📂 Folder Creation Script 🚀
+# 📂 Cascade Folder Building Script 🚀
 
 _This is a simple Bash script that creates a predefined set of nested directories in the current working directory. It iterates over an array of values and generates folder structures accordingly._
 
