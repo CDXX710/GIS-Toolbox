@@ -1,18 +1,11 @@
-# Geometric and Data Integrity Checks in SQL
-
----
-
-## Overview
-
+# 🛠️ Geometric and Data Integrity Checks in SQL
 This SQL script performs various geometric and data integrity checks on a spatial dataset. It identifies and locates invalid geometries, detects duplicate geometries, finds empty surfaces, and compares data between tables to determine inconsistencies. Additionally, it calculates a completeness index for data validation.
 
 ---
 
-## Features
+## 📌 Features
 
----
-
-### 1. Identify and Locate Invalid Geometries
+### 1️⃣ Identify and Locate Invalid Geometries
 
 - **View Creation:** `wrong_geom`
 - Uses `ST_IsValid(geom)` to check validity.
@@ -23,7 +16,7 @@ This SQL script performs various geometric and data integrity checks on a spatia
   SELECT * FROM wrong_geom;
   ```
 
-### 2. Detect Duplicate Geometries
+### 2️⃣ Detect Duplicate Geometries
 
 - Uses `ROW_NUMBER() OVER (PARTITION BY ST_asbinary(geom))` to identify duplicates.
 - Keeps only unique geometries.
@@ -36,7 +29,7 @@ This SQL script performs various geometric and data integrity checks on a spatia
   SELECT geom FROM unique_geom WHERE id <> 1;
   ```
 
-### 3. Identify Empty Surfaces
+### 3️⃣ Identify Empty Surfaces
 
 - Uses `ST_Area(geom) = 0` to find geometries with no area.
 - Example Query:
@@ -44,7 +37,7 @@ This SQL script performs various geometric and data integrity checks on a spatia
   SELECT * FROM pertuis_mauvais WHERE ST_Area(geom) = 0;
   ```
 
-### 4. Compare Differences Between Tables
+### 4️⃣ Compare Differences Between Tables
 
 - Uses `EXCEPT` to find values in `pertuis_mauvais` not present in `zone_urba`.
 - Example Query:
@@ -54,7 +47,7 @@ This SQL script performs various geometric and data integrity checks on a spatia
   SELECT typezone, 'not in pertuis_mauvais' AS note FROM zone_urba;
   ```
 
-### 5. Bidirectional Table Comparison
+### 5️⃣ Bidirectional Table Comparison
 
 - Uses `EXCEPT` and `UNION` to list differences in both directions.
 - Example Query:
@@ -68,7 +61,7 @@ This SQL script performs various geometric and data integrity checks on a spatia
   SELECT libelle AS typezone, 'not in pertuis_mauvais' AS comparison FROM pertuis_mauvais;
   ```
 
-### 6. Calculate Completeness Index
+### 6️⃣ Calculate Completeness Index
 
 - Computes the completeness index using the formula:
   ```
@@ -96,7 +89,7 @@ This SQL script performs various geometric and data integrity checks on a spatia
 
 ---
 
-## Usage
+## 🖱️ Usage
 
 1. Run the SQL file in a database that supports PostGIS.
 2. Ensure that the tables `pertuis_mauvais` and `zone_urba` exist before execution.
@@ -104,13 +97,13 @@ This SQL script performs various geometric and data integrity checks on a spatia
 
 ---
 
-## Dependencies
+## ✔️ Dependencies
 
 - PostgreSQL with PostGIS extension enabled.
 
 ---
 
-## License
+## 📜 License
 
 This project is open-source. Feel free to use and modify it as needed.
 
