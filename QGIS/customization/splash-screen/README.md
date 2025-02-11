@@ -9,14 +9,14 @@
 ## 🌍 English
 
 ### ✅ Enable Customization
-1. Open **QGIS**.
-2. Go to **Settings → Interface Customization...**.
-3. Tick the **Enable customization** checkbox.  
+1️⃣ Open **QGIS**.
+2️⃣ Go to **Settings → Interface Customization...**.
+3️⃣ Tick the **Enable customization** checkbox.  
    *⚠️ If you skip this step, `QGISCUSTOMIZATION3.ini` will not exist!*
 
 ### 📂 Access `QGISCUSTOMIZATION3.ini`
-1. Go to **Settings → User Profiles → Open Active Profile Folder**.
-2. Locate the file at:
+1️⃣ Go to **Settings → User Profiles → Open Active Profile Folder**.
+2️⃣ Locate the file at:
 ```./QGIS/QGISCUSTOMIZATION3.ini```
 
 ### ✏️ Edit `QGISCUSTOMIZATION3.ini`
@@ -41,14 +41,14 @@
 ## 🌍 Français
 
 ### ✅ Activer les options de personnalisation
-1. Ouvrir **QGIS**.
-2. Aller dans Préférences → Interface....
-3. Cocher la case **Activer la personnalisation**.  
+1️⃣ Ouvrir **QGIS**.
+2️⃣ Aller dans Préférences → Interface....
+3️⃣ Cocher la case **Activer la personnalisation**.  
    *⚠️ Sans cette étape, le fichier `QGISCUSTOMIZATION3.ini` n'existera pas !*
 
 ### 📂 Accéder à `QGISCUSTOMIZATION3.ini`
-1. Aller dans **Préférences → Profils → Ouvrir le répertoire du profil actif**.
-2. Le fichier se situe à :
+1️⃣ Aller dans **Préférences → Profils → Ouvrir le répertoire du profil actif**.
+2️⃣ Le fichier se situe à :
 ```./QGIS/QGISCUSTOMIZATION3.ini```
 
 ### ✏️ Modifier `QGISCUSTOMIZATION3.ini`
