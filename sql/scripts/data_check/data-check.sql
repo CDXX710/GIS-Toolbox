@@ -3,7 +3,7 @@
 	-- Find and locate invalid geometries
 	-- Justify these invalid geometries in a view
     -------------------------------------------------------------
-	-------------------------------------------------------------
+    -------------------------------------------------------------
 DO $$
 DECLARE 
     table_name TEXT := '[TABLE_NAME]';
