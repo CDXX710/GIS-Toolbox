@@ -8,7 +8,7 @@
 
 ✔️ **Fixes invalid geometries** using QGIS's `native:fixgeometries` tool  
 ✔️ **Removes duplicate geometries** with `native:deleteduplicategeometries`  
-✔️ **Preserves the original format** (e.g., Shapefile, GeoJSON, GeoPackage, etc.)  
+✔️ **Preserves the original format** (e.g., ``Shapefile``, ``GeoJSON``, ``GeoPackage``, etc.)  
 ✔️ **Supports direct saving to GeoPackage layers** when the input is from a `.gpkg`
 
 ## 🚀 Installation & Usage
