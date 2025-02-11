@@ -17,7 +17,9 @@ This repo includes:
 - ✅ Other GIS Utilities – Various scripts and resources for GIS analysis
 
 ## 🔧 Installation & Usage
-``` Download or Clone the Repository or Files needed```
+```
+Download or Clone the Repository or Files needed
+```
 
 ### Bash
 ```
@@ -33,7 +35,7 @@ Place .model3 files in your QGIS models directory
 
 Access them via the Processing Toolbox
 ```
-### Python
+### QGIS - Python Scripts
 ```
 Open QGIS and go to Processing Toolbox
 
