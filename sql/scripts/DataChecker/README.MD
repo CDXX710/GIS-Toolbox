@@ -1,4 +1,5 @@
 # 🛠️ Geometric and Data Integrity Checks in SQL
+
 This SQL script performs various geometric and data integrity checks on a spatial dataset. It identifies and locates invalid geometries, detects duplicate geometries, finds empty surfaces, and compares data between tables to determine inconsistencies. Additionally, it calculates a completeness index for data validation.
 
 ---
@@ -24,7 +25,7 @@ This SQL script performs various geometric and data integrity checks on a spatia
   ```sql
   WITH unique_geom (id, geom) AS (
       SELECT ROW_NUMBER() OVER (PARTITION BY ST_asbinary(geom)) AS id, geom
-      FROM pertuis_mauvais
+      FROM [TABLE_NAME]
   )
   SELECT geom FROM unique_geom WHERE id <> 1;
   ```
@@ -34,17 +35,17 @@ This SQL script performs various geometric and data integrity checks on a spatia
 - Uses `ST_Area(geom) = 0` to find geometries with no area.
 - Example Query:
   ```sql
-  SELECT * FROM pertuis_mauvais WHERE ST_Area(geom) = 0;
+  SELECT * FROM [TABLE_NAME] WHERE ST_Area(geom) = 0;
   ```
 
 ### 4️⃣ Compare Differences Between Tables
 
-- Uses `EXCEPT` to find values in `pertuis_mauvais` not present in `zone_urba`.
+- Uses `EXCEPT` to find values in `[TABLE_NAME]` not present in `[REF_TABLE_NAME]`.
 - Example Query:
   ```sql
-  SELECT typezone, 'not in zone_urba_ref' AS note FROM pertuis_mauvais
+  SELECT typezone, 'not in [REF_TABLE_NAME]' AS note FROM [TABLE_NAME]
   EXCEPT
-  SELECT typezone, 'not in pertuis_mauvais' AS note FROM zone_urba;
+  SELECT typezone, 'not in [TABLE_NAME]' AS note FROM [REF_TABLE_NAME];
   ```
 
 ### 5️⃣ Bidirectional Table Comparison
@@ -52,13 +53,13 @@ This SQL script performs various geometric and data integrity checks on a spatia
 - Uses `EXCEPT` and `UNION` to list differences in both directions.
 - Example Query:
   ```sql
-  SELECT libelle AS typezone, 'not in zone_urba_ref' AS comparison FROM pertuis_mauvais
+  SELECT libelle AS typezone, 'not in [REF_TABLE_NAME]' AS comparison FROM [TABLE_NAME]
   EXCEPT
-  SELECT libelle AS typezone, 'not in zone_urba_ref' AS comparison FROM zone_urba
+  SELECT libelle AS typezone, 'not in [REF_TABLE_NAME]' AS comparison FROM [REF_TABLE_NAME]
   UNION
-  SELECT libelle AS typezone, 'not in pertuis_mauvais' AS comparison FROM zone_urba
+  SELECT libelle AS typezone, 'not in [TABLE_NAME]' AS comparison FROM [REF_TABLE_NAME]
   EXCEPT
-  SELECT libelle AS typezone, 'not in pertuis_mauvais' AS comparison FROM pertuis_mauvais;
+  SELECT libelle AS typezone, 'not in [TABLE_NAME]' AS comparison FROM [TABLE_NAME];
   ```
 
 ### 6️⃣ Calculate Completeness Index
@@ -76,23 +77,23 @@ This SQL script performs various geometric and data integrity checks on a spatia
           WHEN DATA IS NULL THEN 'OMISSION'
           ELSE 'OK'
       END AS statut, *
-      FROM pertuis_mauvais DATA
-      FULL JOIN zone_urba REF ON REF.libelle = DATA.libelle
+      FROM [TABLE_NAME] DATA
+      FULL JOIN [REF_TABLE_NAME] REF ON REF.libelle = DATA.libelle
   )
   SELECT nb_exceed.value AS "Exceeding", nb_omission.value AS "Omission",
          nb_ref.value AS "Reference Value",
          1 - (nb_exceed.value + nb_omission.value)::NUMERIC / nb_ref.value AS "Completeness Index"
-  FROM (SELECT COUNT(*) AS value FROM zone_urba) nb_ref
+  FROM (SELECT COUNT(*) AS value FROM [REF_TABLE_NAME]) nb_ref
   CROSS JOIN (SELECT COUNT(*) AS value FROM comparison WHERE statut = 'EXCEEDING') AS nb_exceed
   CROSS JOIN (SELECT COUNT(*) AS value FROM comparison WHERE statut = 'OMISSION') AS nb_omission;
   ```
 
 ---
 
-## 🖱️ Usage
+## 🔑 Usage
 
 1. Run the SQL file in a database that supports PostGIS.
-2. Ensure that the tables `pertuis_mauvais` and `zone_urba` exist before execution.
+2. Ensure that the tables `[TABLE_NAME]` and `[REF_TABLE_NAME]` exist before execution.
 3. Modify table names and column names as necessary to align with your dataset.
 
 ---
@@ -103,7 +104,7 @@ This SQL script performs various geometric and data integrity checks on a spatia
 
 ---
 
-## 📜 License
+## 🐝 License
 
 This project is open-source. Feel free to use and modify it as needed.
 
