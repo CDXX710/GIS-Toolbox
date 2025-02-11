@@ -1,10 +1,16 @@
 # Geometric and Data Integrity Checks in SQL
 
+---
+
 ## Overview
 
 This SQL script performs various geometric and data integrity checks on a spatial dataset. It identifies and locates invalid geometries, detects duplicate geometries, finds empty surfaces, and compares data between tables to determine inconsistencies. Additionally, it calculates a completeness index for data validation.
 
+---
+
 ## Features
+
+---
 
 ### 1. Identify and Locate Invalid Geometries
 
@@ -66,7 +72,7 @@ This SQL script performs various geometric and data integrity checks on a spatia
 
 - Computes the completeness index using the formula:
   ```
-  X = 1 - (nb_excédents + nb_ommissions) / nb_référentiel
+  X = 1 - (nb_exceed + nb_omission) / nb_ref
   ```
 - Uses a `FULL JOIN` to compare data.
 - Example Query:
@@ -88,21 +94,23 @@ This SQL script performs various geometric and data integrity checks on a spatia
   CROSS JOIN (SELECT COUNT(*) AS value FROM comparison WHERE statut = 'OMISSION') AS nb_omission;
   ```
 
+---
+
 ## Usage
 
 1. Run the SQL file in a database that supports PostGIS.
 2. Ensure that the tables `pertuis_mauvais` and `zone_urba` exist before execution.
 3. Modify table names and column names as necessary to align with your dataset.
 
+---
+
 ## Dependencies
 
 - PostgreSQL with PostGIS extension enabled.
 
+---
+
 ## License
 
 This project is open-source. Feel free to use and modify it as needed.
-
-## Author
-
-[Your Name]
 
