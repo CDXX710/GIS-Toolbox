@@ -88,23 +88,18 @@ This SQL script performs various geometric and data integrity checks on a spatia
   CROSS JOIN (SELECT COUNT(*) AS value FROM comparison WHERE statut = 'OMISSION') AS nb_omission;
   ```
 
----
-
 ## 🔑 Usage
 
 1. Run the SQL file in a database that supports PostGIS.
 2. Ensure that the tables `[TABLE_NAME]` and `[REF_TABLE_NAME]` exist before execution.
 3. Modify table names and column names as necessary to align with your dataset.
 
----
-
 ## ✔️ Dependencies
 
 - PostgreSQL with PostGIS extension enabled.
-
----
 
 ## 📜 License
 
 This project is open-source. Feel free to use and modify it as needed.
 
+---
