@@ -100,6 +100,12 @@ This SQL script performs various geometric and data integrity checks on a spatia
 
 ## 📜 License
 
-This project is open-source. Feel free to use and modify it as needed.
+Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International
+> [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode)
+
+## ✉️ Contact & Contributions
+
+- Open an **issue** for bug reports or feature requests.
+- Feel free to submit a **pull request** with improvements!
 
 ---
