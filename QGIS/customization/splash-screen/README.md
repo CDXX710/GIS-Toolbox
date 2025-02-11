@@ -14,8 +14,7 @@
 2️⃣ Go to **Settings → Interface Customization...**.
 
 3️⃣ Tick the **Enable customization** checkbox.
-
-  *⚠️ If you skip this step, `QGISCUSTOMIZATION3.ini` will not exist!*
+> ⚠️ *If you skip this step, `QGISCUSTOMIZATION3.ini` will not exist!* ⚠️
 
 ### 📂 Access `QGISCUSTOMIZATION3.ini`
 1️⃣ Go to **Settings → User Profiles → Open Active Profile Folder**.
@@ -50,8 +49,7 @@
 2️⃣ Aller dans Préférences → Interface....
 
 3️⃣ Cocher la case **Activer la personnalisation**. 
-
-  *⚠️ Sans cette étape, le fichier `QGISCUSTOMIZATION3.ini` n'existera pas !*
+> ⚠️ *Sans cette étape, le fichier `QGISCUSTOMIZATION3.ini` n'existera pas !* ⚠️
 
 ### 📂 Accéder à `QGISCUSTOMIZATION3.ini`
 1️⃣ Aller dans **Préférences → Profils → Ouvrir le répertoire du profil actif**.
