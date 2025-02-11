@@ -31,7 +31,7 @@ _It is totally possible to modify either the downloaded data set nor the data so
 - Defines two parallel arrays:
   - `code_insee`: Stores INSEE codes of various cities.
   - `city_name`: Stores corresponding city names.
-- Creates a root folder named `foncier_communal`.
+- Creates a root folder named `municipality_land`.
 - Iterates through the arrays and for each city:
   1. Creates a subdirectory with the city name.
   2. Downloads the corresponding CSV data file from the `data.gouv.fr` portal.
