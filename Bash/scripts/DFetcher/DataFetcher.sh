@@ -37,9 +37,9 @@ city_name=(
 )
 
 # Create the root folder "foncier_communal".
-mkdir foncier_communal
+mkdir municipality_land
 # Navigate to the created root folder.
-cd foncier_communal
+cd municipality_land
 
 # Loop through each array synchronously. The pairs are defined by the order of declaration.
 for i in ${!code_insee[*]}; do
