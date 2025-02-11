@@ -18,7 +18,7 @@ This repo includes:
 
 ## 🔧 Installation & Usage
 ```
-Download or Clone the Repository or Files needed
+Download or Clone the Repository/Files needed
 ```
 
 ### Bash
