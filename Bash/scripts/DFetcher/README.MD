@@ -4,6 +4,8 @@ _This Bash script automates the creation of a directory structure based on INSEE
 
 _It is totally possible to modify either the downloaded data set nor the data source as needed._
 
+---
+
 ## ⚙️ Usage
 
 ### 📌 Prerequisites
