@@ -68,4 +68,9 @@ municipality_land/
 Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International
 > [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode)
 
+## ✉️ Contact & Contributions
+
+- Open an **issue** for bug reports or feature requests.
+- Feel free to submit a **pull request** with improvements!
+
 ---
