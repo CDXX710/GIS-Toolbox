@@ -1,5 +1,5 @@
 # 🗺️ GIS Toolbox 🛠️
-***A collection of homemade, customized, and saved GIS tools and tutorials to streamline geospatial workflows.***
+***A collection of homemade, customized, nor saved GIS tools and tutorials to streamline geospatial workflows.***
 
 ---
 
