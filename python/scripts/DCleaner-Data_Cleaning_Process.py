@@ -29,10 +29,14 @@ class Dcleaner_datacleaningprocess(QgsProcessingAlgorithm):
         input_layer = self.parameterAsVectorLayer(parameters, 'input', context)
         input_path = input_layer.dataProvider().dataSourceUri().split('|')[0]
         input_dir = os.path.dirname(input_path)
-        input_name = os.path.splitext(os.path.basename(input_path))[0]
+        input_name, input_ext = os.path.splitext(os.path.basename(input_path))
 
-        output_fix = os.path.join(input_dir, f"{input_name}_fixed.shp")
-        output_fix_clean = os.path.join(input_dir, f"{input_name}_fixed_cleaned.shp")
+        if input_ext.lower() == ".gpkg":
+            output_fix = f"{input_path}|layername={input_name}_fixed"
+            output_fix_clean = f"{input_path}|layername={input_name}_fixed_cleaned"
+        else:
+            output_fix = os.path.join(input_dir, f"{input_name}_fixed{input_ext}")
+            output_fix_clean = os.path.join(input_dir, f"{input_name}_fixed_cleaned{input_ext}")
 
         # Fix geometries
         alg_params = {
