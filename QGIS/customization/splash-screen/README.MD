@@ -44,6 +44,16 @@ _(For an image located in the `default` profile folder)_
 
 `splashpath=C:\\Users\\ASUS\\AppData\\Roaming\\QGIS\\QGIS3\\profiles\\default\\`
 
+## 📜 License
+
+Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International
+> [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode)
+
+## ✉️ Contact & Contributions
+
+- Open an **issue** for bug reports or feature requests.
+- Feel free to submit a **pull request** with improvements!
+
 ---
 
 ## 🌍 Français
@@ -82,5 +92,15 @@ _(Pour une image située dans le dossier `default`)_
 _(Pour une image située dans le dossier `default`)_
 
 `splashpath=C:\\Users\\ASUS\\AppData\\Roaming\\QGIS\\QGIS3\\profiles\\default\\`
+
+## 📜 License
+
+Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International
+> [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode)
+
+## ✉️ Contact & Contributions
+
+- Ouvrir un **problème** suite à un bug ou pour une demande de fonctionnalité.
+- Soumettre une **demande de tirage** avec des améliorations!
 
 ---
