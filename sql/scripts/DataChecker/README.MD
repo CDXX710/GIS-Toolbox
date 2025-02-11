@@ -104,7 +104,7 @@ This SQL script performs various geometric and data integrity checks on a spatia
 
 ---
 
-## 🐝 License
+## 📜 License
 
 This project is open-source. Feel free to use and modify it as needed.
 
