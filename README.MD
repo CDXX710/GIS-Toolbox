@@ -27,7 +27,7 @@ Copy
 
 Modify
 
-git clone https://github.com/CDXX710/GIS_Custom-Toolbox.git
+git clone https://github.com/CDXX710/GIS-Toolbox.git
 ```
 ### QGIS - Processing Models
 ```
