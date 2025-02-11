@@ -8,8 +8,6 @@ This repository serves as a hub for all the QGIS and GIS-related tools I've deve
 
 I created this collection to improve efficiency in GIS tasks, automate repetitive processes, and explore different ways to extend QGIS functionality. Feel free to explore, use, and contribute!
 
----
-
 ## 🚀 What's Inside?
 This repo includes:
 - ✅ QGIS Python (PyQGIS) Scripts – Custom scripts to automate tasks in QGIS
@@ -17,8 +15,6 @@ This repo includes:
 - ✅ Geoprocessing & Data Cleaning Tools – Scripts and models for fixing geometries, removing duplicates, and more
 - ✅ Automation Scripts – Python tools to streamline spatial workflows
 - ✅ Other GIS Utilities – Various scripts and resources for GIS analysis
-
----
 
 ## 🔧 Installation & Usage
 ``` Download or Clone the Repository or Files needed```
@@ -52,12 +48,8 @@ Ensure you have QGIS installed and configured for Python scripting
 Run the scripts from a Python environment with access to qgis.core
 ```
 
----
-
 ## 📜 License
 This repository is open-source, so feel free to use, modify, and contribute. If you improve or extend any tools, I’d love to see your contributions!
-
----
 
 ## ✉️ Contact
 Have suggestions or need help? Feel free to open an issue or reach out!
