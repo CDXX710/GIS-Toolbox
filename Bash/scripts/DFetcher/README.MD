@@ -14,14 +14,14 @@ _It is totally possible to modify either the downloaded data set nor the data so
 
 ### ▶️ Running the Script
 
-1. Copy the script into a file, e.g., `fetch_foncier_data.sh`.
+1. Copy the script into a file, e.g., `DataFetcher.sh`.
 2. Make the script executable:
    ```bash
-   chmod +x fetch_foncier_data.sh
+   chmod +x DataFetcher.sh
    ```
 3. Run the script:
    ```bash
-   ./fetch_foncier_data.sh
+   ./DataFetcher.sh
    ```
 
 ## 🔍 Script Functionality
@@ -39,7 +39,7 @@ _It is totally possible to modify either the downloaded data set nor the data so
 After running the script, the following structure will be created:
 
 ```
-foncier_communal/
+municipality_land/
 ├── Aussonne/
 │   └── 31032.csv
 ├── Beauzelle/
