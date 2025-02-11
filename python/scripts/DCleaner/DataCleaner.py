@@ -41,7 +41,7 @@ class Dcleaner_datacleaningprocess(QgsProcessingAlgorithm):
         # Fix geometries
         alg_params = {
             'INPUT': parameters['input'],
-            'METHOD': 0,  # Work line
+            'METHOD': 1,  # Structure
             'OUTPUT': output_fix
         }
         outputs['FixGeometries'] = processing.run('native:fixgeometries', alg_params, context=context, feedback=feedback, is_child_algorithm=True)
