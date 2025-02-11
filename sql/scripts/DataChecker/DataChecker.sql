@@ -6,8 +6,7 @@
 -------------------------------------------------------------
 DO $$
 DECLARE 
-    table_name TEXT := '[TABLE_NAME]';
-
+    table_name TEXT := 'TABLE_NAME';
 BEGIN     
 	EXECUTE FORMAT('
         CREATE OR REPLACE VIEW wrong_geom AS
@@ -21,7 +20,7 @@ BEGIN
             -- LOCATE THE INVALID GEOMETRY
         FROM %I
         WHERE ST_IsValid(geom) IS FALSE;',
-table_name);
+	table_name);
 
 EXECUTE FORMAT('SELECT * FROM wrong_geom;');
 END $$;
@@ -35,16 +34,15 @@ END $$;
 -------------------------------------------------------------
 DO $$
 DECLARE 
-    table_name TEXT := '[TABLE_NAME]';
-
-BEGIN 
-    EXECUTE FORMAT('
+    table_name TEXT := 'TABLE_NAME';
+BEGIN
+	EXECUTE FORMAT('
         WITH unique_geom (id, geom) AS (
             SELECT ROW_NUMBER() OVER (PARTITION BY ST_asbinary(geom)) AS id, geom
             FROM %I
         )
         SELECT geom FROM unique_geom WHERE id <> 1;',
-table_name);
+	table_name);
 END $$;
 
 
@@ -56,11 +54,10 @@ END $$;
 -------------------------------------------------------------
 DO $$
 DECLARE 
-    table_name TEXT := '[TABLE_NAME]';
-
-BEGIN 
-    EXECUTE FORMAT('SELECT * FROM %I WHERE ST_Area(geom) = 0;',
-table_name);
+    table_name TEXT := 'TABLE_NAME';
+BEGIN
+	EXECUTE FORMAT('SELECT * FROM %I WHERE ST_Area(geom) = 0;',
+	table_name);
 END $$;
 
 
@@ -72,14 +69,17 @@ END $$;
 -------------------------------------------------------------
 DO $$
 DECLARE 
-    table_name TEXT := '[TABLE_NAME]';
-
-BEGIN 
-    EXECUTE FORMAT('
-        SELECT typezone, ''not in zone_urba_ref'' AS note FROM %I
+    table_name TEXT := 'TABLE_NAME';
+	ref_table_name TEXT := 'REF_TABLE_NAME';
+BEGIN
+	EXECUTE FORMAT('
+        SELECT typezone, ''not in %I'' AS note FROM %I
         EXCEPT
-        SELECT typezone, ''not in pertuis_mauvais'' AS note FROM zone_urba;',
-table_name);
+        SELECT typezone, ''not in %I'' AS note FROM %I;',
+	ref_table_name,
+	table_name,
+	table_name,
+	ref_table_name);
 END $$;
 
 
@@ -91,19 +91,25 @@ END $$;
 -------------------------------------------------------------
 DO $$
 DECLARE 
-    table_name TEXT := '[TABLE_NAME]';
-
-BEGIN 
-    EXECUTE FORMAT('
-        SELECT libelle AS typezone, ''not in zone_urba_ref'' AS comparison FROM %I
+    table_name TEXT := 'TABLE_NAME';
+	ref_table_name TEXT := 'REF_TABLE_NAME';
+BEGIN
+	EXECUTE FORMAT('
+        SELECT libelle AS typezone, ''not in %I'' AS comparison FROM %I
         EXCEPT
-        SELECT libelle AS typezone, ''not in zone_urba_ref'' AS comparison FROM zone_urba
+        SELECT libelle AS typezone, ''not in %I'' AS comparison FROM %I
         UNION
-        SELECT libelle AS typezone, ''not in pertuis_mauvais'' AS comparison FROM zone_urba
+        SELECT libelle AS typezone, ''not in %I'' AS comparison FROM %I
         EXCEPT
-        SELECT libelle AS typezone, ''not in pertuis_mauvais'' AS comparison FROM %I;',
-table_name,
-table_name);
+        SELECT libelle AS typezone, ''not in %I'' AS comparison FROM %I;',
+	ref_table_name,
+	table_name,
+	ref_table_name,
+	ref_table_name,
+	table_name,
+	ref_table_name,
+	table_name,
+	table_name);
 END $$;
 
 
@@ -116,10 +122,10 @@ END $$;
 -------------------------------------------------------------
 DO $$
 DECLARE 
-    table_name TEXT := '[TABLE_NAME]';
-
-BEGIN 
-    EXECUTE FORMAT('
+    table_name TEXT := 'TABLE_NAME';
+	ref_table_name TEXT := 'REF_TABLE_NAME';
+BEGIN
+	EXECUTE FORMAT('
         WITH comparison AS (
             SELECT CASE
                 WHEN REF IS NULL THEN ''EXCEEDING''
@@ -129,15 +135,17 @@ BEGIN
                 ELSE ''OK''
             END AS statut, *
             FROM %I DATA
-            FULL JOIN zone_urba REF ON REF.libelle = DATA.libelle
+            FULL JOIN %I REF ON REF.libelle = DATA.libelle
         )
         SELECT
             nb_exceed.value AS "Exceeding",
             nb_omission.value AS "Omission",
             nb_ref.value AS "Reference Value",
             1 - (nb_exceed.value + nb_omission.value)::NUMERIC / nb_ref.value AS "Completeness Index"
-        FROM (SELECT COUNT(*) AS value FROM zone_urba) nb_ref
+        FROM (SELECT COUNT(*) AS value FROM %I) nb_ref
         CROSS JOIN (SELECT COUNT(*) AS value FROM comparison WHERE statut = ''EXCEEDING'') AS nb_exceed
         CROSS JOIN (SELECT COUNT(*) AS value FROM comparison WHERE statut = ''OMISSION'') AS nb_omission;',
-table_name);
+	table_name,
+	ref_table_name,
+	ref_table_name);
 END $$;
