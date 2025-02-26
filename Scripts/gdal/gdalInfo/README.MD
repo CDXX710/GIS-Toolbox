@@ -40,8 +40,7 @@ The script saves the output to a JSON file named after the input file (without e
 ## 📜 License
 
 Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International
-
-> CC BY-NC-SA 4.0
+> [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode)
 
 ## ✉️ Contact & Contributions
 
