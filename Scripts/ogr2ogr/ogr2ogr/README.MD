@@ -1,13 +1,14 @@
 # 🛠️ Ogr2Ogr: Geospatial Data Reprojection Tool
 
-Ogr2Ogr is a Python script designed to handle the reprojection of geospatial data using the `ogr2ogr` utility. It allows users to specify source and target EPSG codes, input and output file paths, and executes the reprojection process.
+Ogr2Ogr is a Python script designed to facilitate the reprojection of geospatial data using the `ogr2ogr` utility. It allows users to specify source and target EPSG codes, input and output file paths, and executes the reprojection process seamlessly.
 
 ## 📌 Features
 
-✔️ Reprojects geospatial data from one coordinate system to another
-✔️ Supports user-specified EPSG codes and file paths
-✔️ Provides a command-line interface for user interaction
-✔️ Generates a default output file name based on the target EPSG code and input file name
+- ✔️ Reprojects geospatial data from one coordinate system to another
+- ✔️ Supports user-specified EPSG codes and file paths
+- ✔️ Provides an interactive command-line interface for user interaction
+- ✔️ Generates a default output file name based on the target EPSG code and input file name
+- ✔️ Easy to integrate into existing workflows
 
 ## 🚀 Installation & Usage
 
@@ -21,7 +22,7 @@ Ogr2Ogr is a Python script designed to handle the reprojection of geospatial dat
 2. Navigate to the directory where `ogr2ogr.py` is saved.
 3. Run the script using Python:
 
-```
+```bash
 python ogr2ogr.py
 ```
 
@@ -37,11 +38,11 @@ The script will:
 
 ## 📂 Output File Naming
 
-The script uses the target EPSG code and input file name to generate a default output file name if none is provided by the user.
+The script automatically generates a default output file name if none is provided by the user. The default name is based on the target EPSG code and the input file name.
 
 ## 📜 License
 
-Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International
+This project is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.
 > [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode)
 
 ## ✉️ Contact & Contributions
