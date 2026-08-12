@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+  <g id="a" data-name="Layer 1">
+    <g>
+      <path d="M5.5,2.5h8v8H5.5V2.5Z" style="fill: #eeeeec; stroke: #888a85; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1px;"/>
+      <path d="M3.5,4.5h8v8H3.5v-8Z" style="fill: #eeeeec; stroke: #888a85; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1px;"/>
+      <g>
+        <path d="M7.5,6v4c.02.61,1.98.67,2,0V1.57c0-1.14-2-1.08-2,0v.43" style="fill: none; stroke: #415a75; stroke-miterlimit: 15.12; stroke-width: 1px;"/>
+        <path d="M1.5,9.46v5.04h6.04" style="fill: none; stroke: #888a85; stroke-miterlimit: 15.12; stroke-width: 1px;"/>
+      </g>
+    </g>
+  </g>
+  <g id="b" data-name="Layer 2">
+    <path id="c" data-name="path4" d="M8,3C4.51,3,1.49,5.03,0,8c1.49,2.97,4.51,5,8,5s6.51-2.03,8-5c-1.49-2.97-4.51-5-8-5ZM11.94,5.65c.94.6,1.74,1.4,2.34,2.35-.6.95-1.39,1.75-2.34,2.35-1.18.75-2.55,1.15-3.94,1.15s-2.76-.4-3.94-1.15c-.94-.6-1.74-1.4-2.34-2.35.6-.95,1.39-1.75,2.34-2.35.06-.04.12-.08.19-.11-.16.43-.24.89-.24,1.37,0,2.21,1.79,4,4,4s4-1.79,4-4c0-.48-.09-.94-.24-1.37.06.04.12.07.19.11h0ZM8,6.5c0,.83-.67,1.5-1.5,1.5s-1.5-.67-1.5-1.5.67-1.5,1.5-1.5,1.5.67,1.5,1.5Z" style="fill: #f9f9f9; stroke: #000; stroke-width: .2px;"/>
+  </g>
+</svg>
