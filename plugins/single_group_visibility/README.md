@@ -14,7 +14,7 @@ Useful when you have several mutually-exclusive groups (e.g. different scenarios
 ## Installation
 
 ### From ZIP
-1. Download the latest `single_group_visibility.zip` from [Releases](../../releases) or this repo.
+1. Download the latest `single_group_visibility.zip` from [Releases](https://github.com/CDXX710/GIS-Toolbox/releases) or this repo.
 2. In QGIS: **Plugins → Manage and Install Plugins → Install from ZIP**.
 3. Select the downloaded ZIP file and click **Install Plugin**.
 4. Enable **Single Group Visibility** in the plugin list if it isn't already active.
