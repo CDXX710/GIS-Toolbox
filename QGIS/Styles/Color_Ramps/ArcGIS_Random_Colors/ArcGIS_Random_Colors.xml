@@ -1,0 +1,310 @@
+<!DOCTYPE qgis_style>
+<qgis_style version="2">
+  <symbols/>
+  <colorramps>
+    <colorramp name="ArcGIS - Black and White" tags="Imported,ArcGIS - Color Ramp" type="random">
+      <Option type="Map">
+        <Option name="count" value="35" type="QString"/>
+        <Option name="hueMax" value="2" type="QString"/>
+        <Option name="hueMin" value="0" type="QString"/>
+        <Option name="rampType" value="random" type="QString"/>
+        <Option name="satMax" value="5" type="QString"/>
+        <Option name="satMin" value="0" type="QString"/>
+        <Option name="valMax" value="254" type="QString"/>
+        <Option name="valMin" value="38" type="QString"/>
+      </Option>
+    </colorramp>
+    <colorramp name="ArcGIS - Blues" tags="Imported,ArcGIS - Color Ramp" type="random">
+      <Option type="Map">
+        <Option name="count" value="35" type="QString"/>
+        <Option name="hueMax" value="210" type="QString"/>
+        <Option name="hueMin" value="190" type="QString"/>
+        <Option name="rampType" value="random" type="QString"/>
+        <Option name="satMax" value="204" type="QString"/>
+        <Option name="satMin" value="51" type="QString"/>
+        <Option name="valMax" value="252" type="QString"/>
+        <Option name="valMin" value="165" type="QString"/>
+      </Option>
+    </colorramp>
+    <colorramp name="ArcGIS - Cool Grey" tags="Imported,ArcGIS - Color Ramp" type="random">
+      <Option type="Map">
+        <Option name="count" value="35" type="QString"/>
+        <Option name="hueMax" value="272" type="QString"/>
+        <Option name="hueMin" value="270" type="QString"/>
+        <Option name="rampType" value="random" type="QString"/>
+        <Option name="satMax" value="30" type="QString"/>
+        <Option name="satMin" value="12" type="QString"/>
+        <Option name="valMax" value="254" type="QString"/>
+        <Option name="valMin" value="51" type="QString"/>
+      </Option>
+    </colorramp>
+    <colorramp name="ArcGIS - Cool Tone" tags="Imported,ArcGIS - Color Ramp" type="random">
+      <Option type="Map">
+        <Option name="count" value="35" type="QString"/>
+        <Option name="hueMax" value="248" type="QString"/>
+        <Option name="hueMin" value="60" type="QString"/>
+        <Option name="rampType" value="random" type="QString"/>
+        <Option name="satMax" value="76" type="QString"/>
+        <Option name="satMin" value="38" type="QString"/>
+        <Option name="valMax" value="229" type="QString"/>
+        <Option name="valMin" value="178" type="QString"/>
+      </Option>
+    </colorramp>
+    <colorramp name="ArcGIS - Cyans" tags="Imported,ArcGIS - Color Ramp" type="random">
+      <Option type="Map">
+        <Option name="count" value="35" type="QString"/>
+        <Option name="hueMax" value="188" type="QString"/>
+        <Option name="hueMin" value="167" type="QString"/>
+        <Option name="rampType" value="random" type="QString"/>
+        <Option name="satMax" value="204" type="QString"/>
+        <Option name="satMin" value="51" type="QString"/>
+        <Option name="valMax" value="252" type="QString"/>
+        <Option name="valMin" value="165" type="QString"/>
+      </Option>
+    </colorramp>
+    <colorramp name="ArcGIS - Dark Glazes" tags="Imported,ArcGIS - Color Ramp" type="random">
+      <Option type="Map">
+        <Option name="count" value="35" type="QString"/>
+        <Option name="hueMax" value="360" type="QString"/>
+        <Option name="hueMin" value="0" type="QString"/>
+        <Option name="rampType" value="random" type="QString"/>
+        <Option name="satMax" value="204" type="QString"/>
+        <Option name="satMin" value="127" type="QString"/>
+        <Option name="valMax" value="178" type="QString"/>
+        <Option name="valMin" value="127" type="QString"/>
+      </Option>
+    </colorramp>
+    <colorramp name="ArcGIS - Enamel" tags="Imported,ArcGIS - Color Ramp" type="random">
+      <Option type="Map">
+        <Option name="count" value="35" type="QString"/>
+        <Option name="hueMax" value="360" type="QString"/>
+        <Option name="hueMin" value="0" type="QString"/>
+        <Option name="rampType" value="random" type="QString"/>
+        <Option name="satMax" value="204" type="QString"/>
+        <Option name="satMin" value="153" type="QString"/>
+        <Option name="valMax" value="204" type="QString"/>
+        <Option name="valMin" value="153" type="QString"/>
+      </Option>
+    </colorramp>
+    <colorramp name="ArcGIS - Green Blues" tags="Imported,ArcGIS - Color Ramp" type="random">
+      <Option type="Map">
+        <Option name="count" value="35" type="QString"/>
+        <Option name="hueMax" value="151" type="QString"/>
+        <Option name="hueMin" value="131" type="QString"/>
+        <Option name="rampType" value="random" type="QString"/>
+        <Option name="satMax" value="204" type="QString"/>
+        <Option name="satMin" value="51" type="QString"/>
+        <Option name="valMax" value="252" type="QString"/>
+        <Option name="valMin" value="165" type="QString"/>
+      </Option>
+    </colorramp>
+    <colorramp name="ArcGIS - Greens" tags="Imported,ArcGIS - Color Ramp" type="random">
+      <Option type="Map">
+        <Option name="count" value="35" type="QString"/>
+        <Option name="hueMax" value="116" type="QString"/>
+        <Option name="hueMin" value="96" type="QString"/>
+        <Option name="rampType" value="random" type="QString"/>
+        <Option name="satMax" value="204" type="QString"/>
+        <Option name="satMin" value="51" type="QString"/>
+        <Option name="valMax" value="252" type="QString"/>
+        <Option name="valMin" value="165" type="QString"/>
+      </Option>
+    </colorramp>
+    <colorramp name="ArcGIS - Magentas" tags="Imported,ArcGIS - Color Ramp" type="random">
+      <Option type="Map">
+        <Option name="count" value="35" type="QString"/>
+        <Option name="hueMax" value="332" type="QString"/>
+        <Option name="hueMin" value="310" type="QString"/>
+        <Option name="rampType" value="random" type="QString"/>
+        <Option name="satMax" value="204" type="QString"/>
+        <Option name="satMin" value="51" type="QString"/>
+        <Option name="valMax" value="252" type="QString"/>
+        <Option name="valMin" value="204" type="QString"/>
+      </Option>
+    </colorramp>
+    <colorramp name="ArcGIS - Muted Pastels" tags="Imported,ArcGIS - Color Ramp" type="random">
+      <Option type="Map">
+        <Option name="count" value="35" type="QString"/>
+        <Option name="hueMax" value="360" type="QString"/>
+        <Option name="hueMin" value="0" type="QString"/>
+        <Option name="rampType" value="random" type="QString"/>
+        <Option name="satMax" value="76" type="QString"/>
+        <Option name="satMin" value="38" type="QString"/>
+        <Option name="valMax" value="216" type="QString"/>
+        <Option name="valMin" value="191" type="QString"/>
+      </Option>
+    </colorramp>
+    <colorramp name="ArcGIS - Oranges" tags="Imported,ArcGIS - Color Ramp" type="random">
+      <Option type="Map">
+        <Option name="count" value="35" type="QString"/>
+        <Option name="hueMax" value="38" type="QString"/>
+        <Option name="hueMin" value="20" type="QString"/>
+        <Option name="rampType" value="random" type="QString"/>
+        <Option name="satMax" value="204" type="QString"/>
+        <Option name="satMin" value="51" type="QString"/>
+        <Option name="valMax" value="252" type="QString"/>
+        <Option name="valMin" value="178" type="QString"/>
+      </Option>
+    </colorramp>
+    <colorramp name="ArcGIS - Pastel Terra Tones" tags="Imported,ArcGIS - Color Ramp" type="random">
+      <Option type="Map">
+        <Option name="count" value="35" type="QString"/>
+        <Option name="hueMax" value="53" type="QString"/>
+        <Option name="hueMin" value="15" type="QString"/>
+        <Option name="rampType" value="random" type="QString"/>
+        <Option name="satMax" value="63" type="QString"/>
+        <Option name="satMin" value="38" type="QString"/>
+        <Option name="valMax" value="229" type="QString"/>
+        <Option name="valMin" value="153" type="QString"/>
+      </Option>
+    </colorramp>
+    <colorramp name="ArcGIS - Pastels" tags="Imported,ArcGIS - Color Ramp" type="random">
+      <Option type="Map">
+        <Option name="count" value="35" type="QString"/>
+        <Option name="hueMax" value="360" type="QString"/>
+        <Option name="hueMin" value="0" type="QString"/>
+        <Option name="rampType" value="random" type="QString"/>
+        <Option name="satMax" value="76" type="QString"/>
+        <Option name="satMin" value="38" type="QString"/>
+        <Option name="valMax" value="254" type="QString"/>
+        <Option name="valMin" value="252" type="QString"/>
+      </Option>
+    </colorramp>
+    <colorramp name="ArcGIS - Pastels Blue to Red" tags="Imported,ArcGIS - Color Ramp" type="random">
+      <Option type="Map">
+        <Option name="count" value="35" type="QString"/>
+        <Option name="hueMax" value="35" type="QString"/>
+        <Option name="hueMin" value="206" type="QString"/>
+        <Option name="rampType" value="random" type="QString"/>
+        <Option name="satMax" value="76" type="QString"/>
+        <Option name="satMin" value="38" type="QString"/>
+        <Option name="valMax" value="242" type="QString"/>
+        <Option name="valMin" value="204" type="QString"/>
+      </Option>
+    </colorramp>
+    <colorramp name="ArcGIS - Purple Blues" tags="Imported,ArcGIS - Color Ramp" type="random">
+      <Option type="Map">
+        <Option name="count" value="35" type="QString"/>
+        <Option name="hueMax" value="243" type="QString"/>
+        <Option name="hueMin" value="226" type="QString"/>
+        <Option name="rampType" value="random" type="QString"/>
+        <Option name="satMax" value="204" type="QString"/>
+        <Option name="satMin" value="51" type="QString"/>
+        <Option name="valMax" value="252" type="QString"/>
+        <Option name="valMin" value="193" type="QString"/>
+      </Option>
+    </colorramp>
+    <colorramp name="ArcGIS - Purple Reds" tags="Imported,ArcGIS - Color Ramp" type="random">
+      <Option type="Map">
+        <Option name="count" value="35" type="QString"/>
+        <Option name="hueMax" value="302" type="QString"/>
+        <Option name="hueMin" value="286" type="QString"/>
+        <Option name="rampType" value="random" type="QString"/>
+        <Option name="satMax" value="204" type="QString"/>
+        <Option name="satMin" value="51" type="QString"/>
+        <Option name="valMax" value="252" type="QString"/>
+        <Option name="valMin" value="178" type="QString"/>
+      </Option>
+    </colorramp>
+    <colorramp name="ArcGIS - Purples" tags="Imported,ArcGIS - Color Ramp" type="random">
+      <Option type="Map">
+        <Option name="count" value="35" type="QString"/>
+        <Option name="hueMax" value="277" type="QString"/>
+        <Option name="hueMin" value="258" type="QString"/>
+        <Option name="rampType" value="random" type="QString"/>
+        <Option name="satMax" value="204" type="QString"/>
+        <Option name="satMin" value="51" type="QString"/>
+        <Option name="valMax" value="252" type="QString"/>
+        <Option name="valMin" value="193" type="QString"/>
+      </Option>
+    </colorramp>
+    <colorramp name="ArcGIS - Reds" tags="Imported,ArcGIS - Color Ramp" type="random">
+      <Option type="Map">
+        <Option name="count" value="35" type="QString"/>
+        <Option name="hueMax" value="13" type="QString"/>
+        <Option name="hueMin" value="347" type="QString"/>
+        <Option name="rampType" value="random" type="QString"/>
+        <Option name="satMax" value="204" type="QString"/>
+        <Option name="satMin" value="51" type="QString"/>
+        <Option name="valMax" value="252" type="QString"/>
+        <Option name="valMin" value="178" type="QString"/>
+      </Option>
+    </colorramp>
+    <colorramp name="ArcGIS - Terra Tones" tags="Imported,ArcGIS - Color Ramp" type="random">
+      <Option type="Map">
+        <Option name="count" value="35" type="QString"/>
+        <Option name="hueMax" value="53" type="QString"/>
+        <Option name="hueMin" value="15" type="QString"/>
+        <Option name="rampType" value="random" type="QString"/>
+        <Option name="satMax" value="140" type="QString"/>
+        <Option name="satMin" value="102" type="QString"/>
+        <Option name="valMax" value="229" type="QString"/>
+        <Option name="valMin" value="153" type="QString"/>
+      </Option>
+    </colorramp>
+    <colorramp name="ArcGIS - Verdant Tones" tags="Imported,ArcGIS - Color Ramp" type="random">
+      <Option type="Map">
+        <Option name="count" value="35" type="QString"/>
+        <Option name="hueMax" value="183" type="QString"/>
+        <Option name="hueMin" value="58" type="QString"/>
+        <Option name="rampType" value="random" type="QString"/>
+        <Option name="satMax" value="114" type="QString"/>
+        <Option name="satMin" value="63" type="QString"/>
+        <Option name="valMax" value="229" type="QString"/>
+        <Option name="valMin" value="153" type="QString"/>
+      </Option>
+    </colorramp>
+    <colorramp name="ArcGIS - Warm Grey" tags="Imported,ArcGIS - Color Ramp" type="random">
+      <Option type="Map">
+        <Option name="count" value="35" type="QString"/>
+        <Option name="hueMax" value="360" type="QString"/>
+        <Option name="hueMin" value="358" type="QString"/>
+        <Option name="rampType" value="random" type="QString"/>
+        <Option name="satMax" value="30" type="QString"/>
+        <Option name="satMin" value="12" type="QString"/>
+        <Option name="valMax" value="254" type="QString"/>
+        <Option name="valMin" value="51" type="QString"/>
+      </Option>
+    </colorramp>
+    <colorramp name="ArcGIS - Warm Tones" tags="Imported,ArcGIS - Color Ramp" type="random">
+      <Option type="Map">
+        <Option name="count" value="35" type="QString"/>
+        <Option name="hueMax" value="83" type="QString"/>
+        <Option name="hueMin" value="306" type="QString"/>
+        <Option name="rampType" value="random" type="QString"/>
+        <Option name="satMax" value="114" type="QString"/>
+        <Option name="satMin" value="76" type="QString"/>
+        <Option name="valMax" value="229" type="QString"/>
+        <Option name="valMin" value="204" type="QString"/>
+      </Option>
+    </colorramp>
+    <colorramp name="ArcGIS - Yellow Greens" tags="Imported,ArcGIS - Color Ramp" type="random">
+      <Option type="Map">
+        <Option name="count" value="35" type="QString"/>
+        <Option name="hueMax" value="85" type="QString"/>
+        <Option name="hueMin" value="67" type="QString"/>
+        <Option name="rampType" value="random" type="QString"/>
+        <Option name="satMax" value="204" type="QString"/>
+        <Option name="satMin" value="51" type="QString"/>
+        <Option name="valMax" value="252" type="QString"/>
+        <Option name="valMin" value="178" type="QString"/>
+      </Option>
+    </colorramp>
+    <colorramp name="ArcGIS - Yellows" tags="Imported,ArcGIS - Color Ramp" type="random">
+      <Option type="Map">
+        <Option name="count" value="35" type="QString"/>
+        <Option name="hueMax" value="59" type="QString"/>
+        <Option name="hueMin" value="42" type="QString"/>
+        <Option name="rampType" value="random" type="QString"/>
+        <Option name="satMax" value="204" type="QString"/>
+        <Option name="satMin" value="51" type="QString"/>
+        <Option name="valMax" value="252" type="QString"/>
+        <Option name="valMin" value="178" type="QString"/>
+      </Option>
+    </colorramp>
+  </colorramps>
+  <textformats/>
+  <labelsettings/>
+  <legendpatchshapes/>
+  <symbols3d/>
+</qgis_style>
