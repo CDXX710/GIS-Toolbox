@@ -1,0 +1,17 @@
+[general]
+name=Advanced Theme Switcher
+qgisMinimumVersion=3.16
+description=Adds a panel to apply Map Themes, and exposes the active theme's name as the @current_theme expression variable everywhere in the project.
+version=1.4.0
+author=Custom
+email=you@example.com
+about=Adds a dockable "Theme Switcher" panel listing the project's Map Themes. Clicking a theme applies it via QGIS's normal QgsMapThemeCollection.applyTheme() (so all standard theme behaviour is unchanged), and sets a project-level expression variable, current_theme, to that theme's name. That variable is then readable as @current_theme in any expression anywhere in the project (symbology, labels, field calculator, etc.), letting you build styling logic that depends on which theme is currently active.
+tracker=
+repository=
+hasProcessingProvider=no
+tags=theme,expression,variable,map themes
+category=Plugins
+icon=icons/icon.svg
+experimental=False
+deprecated=False
+server=False
