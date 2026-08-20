@@ -1,4 +1,4 @@
-# Single Group Visibility
+# Single Group Visibility (QGIS Plugin)
 
 A QGIS plugin that keeps only one top-level layer tree group visible at a time — radio-button style. Turning a group's visibility checkbox ON automatically turns all other top-level groups OFF.
 
