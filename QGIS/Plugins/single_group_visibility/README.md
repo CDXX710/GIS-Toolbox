@@ -45,7 +45,7 @@ Only groups are affected — visibility changes are checked via `nodeType() == 0
 
 ## License
 
-MIT (or update to your preferred license)
+MIT
 
 ## Contributing
 
