@@ -1,0 +1,135 @@
+GIMP Palette
+Name: ArcGIS Color Palette
+Columns: 4
+# source: https://support.esri.com/en-us/knowledge-base/what-are-the-rgb-color-values-for-the-standard-arcmap-c-000010027
+
+255 255 255 White
+225 225 225 Gray 10%
+204 204 204 Gray 20%
+178 178 178 Gray 30%
+156 156 156 Gray 40%
+130 130 130 Gray 50%
+104 104 104 Gray 60%
+78  78  78 Gray 70%
+52  52  52 Gray 80%
+26  26  26 Gray 90%
+
+215 158 158 Dusty Rose
+215 176 158 Dusty Soapstone
+215 194 158 Dusty Tecate
+215 215 158 Dusty Lime
+199 215 158 Dusty Apple
+180 215 158 Dusty Sage
+158 215 194 Dusty Turquoise
+158 187 215 Dusty Blue Gray
+158 170 215 Dusty Violet
+194 158 215 Dusty Lilac
+214 157 188 Dusty Tudor Rose
+
+255 190 190 Light Rose
+255 235 190 Light Sahara
+255 235 175 Light Topaz
+255 255 190 Light Yellow
+233 255 190 Light Olivine
+211 255 190 Light Tzavorite
+190 255 232 Light Indicolite
+190 232 255 Light Sodalite
+190 210 255 Light Sugilite
+232 190 255 Light Lepidolite
+255 190 232 Light Rhodolite
+
+255 127 127 Soft Coral
+255 167 127 Soft Cantaloupe
+255 211 127 Soft Mango
+255 255 115 Soft Yellow
+209 255 115 Soft Lemongrass
+163 255 115 Soft Apple
+115 255 223 Soft Beryl
+115 223 255 Soft Apatite
+115 178 255 Soft Yogo
+223 115 255 Soft Heliotrope
+255 115 223 Soft Fuchsia
+
+245 122 122 Muted Coral
+245 162 122 Muted Orange
+245 202 122 Muted Sand
+245 245 122 Muted Yellow
+205 245 122 Muted Lime
+165 245 122 Muted Key Lime
+122 245 202 Muted Vert
+122 182 245 Muted Oxide Blue
+122 142 245 Muted Azul
+202 122 245 Muted Lilac
+245 122 182 Muted Fuchsia
+
+255   0   0 Red
+255  85   0 Fire Red
+255 170   0 Gold
+255 255   0 Yellow
+170 255   0 Peridot
+ 85 255   0 Apple Green
+  0 255 197 Tourmaline
+  0 197 255 Sky Blue
+  0 130 255 Cretan Blue
+197   0 255 Amethyst
+255   0 197 Pink
+
+230   0   0 Medium Red
+230  76   0 Medium Flame
+230 152   0 Medium Orange
+230 230   0 Medium Yellow
+152 230   0 Medium Macaw
+ 76 230   0 Medium Quetzel
+  0 230 169 Medium Chrysoprase
+  0 169 230 Medium Moorea
+  0  92 230 Medium Lapis
+169   0 230 Medium Violet
+230   0 169 Medium Pink
+
+205 102 102 Subdued Tulip
+205 137 102 Subdued Nubuck
+205 170 102 Subdued Sienna
+205 205 102 Subdued Olivenite
+171 205 102 Subdued Olive
+137 205 102 Subdued Fern
+102 205 171 Subdued Jadeite
+102 153 205 Subdued Atlantic
+102 119 205 Subdued Pacific
+170 102 205 Subdued Aster
+205 102 153 Subdued Protea
+
+168   0   0 Dark Red
+168  56   0 Dark Cherry
+168 112   0 Dark Umber
+168 168   0 Dark Olivenite
+112 168   0 Dark Tarragon
+ 56 168   0 Dark Leaf
+  0 168 132 Dark Malachite
+  0 132 168 Dark Delft
+  0  77 168 Dark Ultra Blue
+132   0 168 Dark Amethyst
+168   0 132 Dark Orchid
+
+115   0   0 Deep Red
+115  38   0 Deep Cherrywood
+115  76   0 Deep Burnt Umber
+115 115   0 Deep Olivenite
+ 76 115   0 Deep Spruce
+ 38 115   0 Deep Fir
+  0 115  76 Deep Peacock
+  0  76 115 Deep Steel Blue
+  0  38 115 Deep Navy
+ 76   0 115 Deep Ultramarine
+115   0  76 Deep Purple
+
+137  68  68 Earth Cordovan
+137  90  68 Earth Cocoa
+137 112  68 Earth Leather
+137 137  68 Earth Lichen
+114 137  68 Earth Moss
+ 92 137  68 Earth Lotus
+ 68 137 112 Earth Deep Forest
+ 68 101 137 Earth Larkspur
+ 38  79 137 Earth Glacier
+112  68 137 Earth Blackberry
+137  68 101 Earth Cabernet
